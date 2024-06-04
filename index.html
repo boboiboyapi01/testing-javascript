@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" />
+    <title>cihuyy</title>
+</head>
+
+<body>
+    <main id="container" class="container">
+        <div class="utama">
+            <div id="lamanPertama">
+                <div class="greeting"> halo, silahkan isi nama terlebih dahulu</div>
+                <div class="inputan">
+                    <input id="inputNama" />
+                    <button id="submitButton" onClick="clickMasuk()">masuk</button>
+                </div>
+            </div>
+            <div id="lamanBasaBasi" style="display:none;">
+                <p id="basaBasi"></p>
+                <button style="margin-top: 1em;" onClick="clickLamanKedua()" id="buttonSiap">siap</button>
+            </div>
+            <div id="lamanKedua" style="display:none;">
+                <div class="nembak">kamu mau ga jadi pacar aku?</div>
+                <div class="container-pilihan">
+                    <button class="yes" id="yes" onClick="hooh()">mau</button>
+                    <button class="no" id="no1" onClick="noCounter(); no1Hilang();">nggak</button>
+                    <button class="no" id="no2" onClick="noCounter(); no2Hilang();" style="opacity:0;">nggak</button>
+                    <button class="no" id="no3" onClick="noCounter(); no3Hilang();" style="opacity:0;">nggak</button>
+                </div>
+            </div>
+            <div id="lamanTaubat" style="display:none;">
+                <div class="gifketawa"></div>
+                <div class="ceramah">maaf, aku cuma bercanda </div>
+                <br>
+                <div class="ceramah">aku gamau mendekati zina</div>
+                <br>
+                <br>
+                <br>
+                <button onClick="reRender()" id="ulangi">ULANGI</button>
+                <div class="gifketawa2"></div>
+            </div>
+        </div>
+    </main>
+    <div id="lamanSadBoi" style="display: none;">
+        <div class="anakSadBoi">
+            <div class="curahanHati">segitu ga sukanya ya sama aku sampai nge-klik nggak 10 kali</div>
+            <button onClick="kembaliKeContainer()">mau ganti jawaban ga? 😥😭</button>
+        </div>
+    </div>
+    <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
